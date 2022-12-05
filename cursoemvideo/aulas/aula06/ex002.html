@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+</head>
+<style>
+    body {
+        background-color: rgb(61, 61, 250);
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>Ola, mundo!
+        <p>Me livrei da maldição</p>
+    </h1>
+    <script>
+        var nome = window.prompt ('Qual é o seu nome:') // cria a variável nome que recebe os dados inseridos pelo usuário no prompt
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') // o sinal de mais serve para concatenacão (juntar).
+    </script> 
+
+<script>
+    var num1 = Number(window.prompt (nome +', digite um número ')) // Number -> transforma a var em tipo numero (int ou float), necesária para evitar a concatenação.   
+    var num2 = Number(window.prompt ('Agora, digite outro número ')) 
+    var res = num1 + num2 // cuidado, o + serve para adição e também para concatenação. se a variável for tipo string ele nao faz a soma.
+
+    /*  window.alert(nome + ', o resultado da soma é: ' + String(res)) // String -> converte a var para o tipo string*/
+    window.alert(`${nome}, o resultado da soma de ${num1} com ${num2} é: ${res}`) // ${variável} -> substitui a concatenação (+). usar crase ao invés das aspas.
+</script> 
+    
+</body>
+</html>
